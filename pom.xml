@@ -38,6 +38,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jnosql.databases</groupId>
@@ -103,15 +104,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-<!--                <configuration>-->
-<!--                    <layout></layout>-->
-<!--                    <excludes>-->
-<!--                        <exclude>-->
-<!--                            <groupId>org.eclipse.jnosql.mapping</groupId>-->
-<!--                            <artifactId>jnosql-mapping-reflection</artifactId>-->
-<!--                        </exclude>-->
-<!--                    </excludes>-->
-<!--                </configuration>-->
+                <configuration>
+                    <includeTools>true</includeTools>
+                </configuration>
             </plugin>
         </plugins>
     </build>

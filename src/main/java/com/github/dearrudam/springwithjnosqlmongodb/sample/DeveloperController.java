@@ -29,7 +29,7 @@ public class DeveloperController {
     }
 
     @PostMapping
-    public CreatedDeveloper create(
+    public CreatedDeveloper newDeveloper(
             @RequestBody NewDeveloper request) {
         var developer = NewDeveloper.toEntity(request);
         var persistedDeveloper = developers.save(developer);
