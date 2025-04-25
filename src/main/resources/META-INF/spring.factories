@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationContextInitializer=com.github.dearrudam.springwithjnosqlmongodb.JNoSQLBridgeApplicationContextInitializer
+org.springframework.context.ApplicationListener=com.github.dearrudam.springwithjnosqlmongodb.WeldSpringBridgeApplicationListener
